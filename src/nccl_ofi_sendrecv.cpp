@@ -2126,7 +2126,7 @@ int nccl_net_ofi_sendrecv_ep_t::cleanup_resources()
 	} else {
 		nccl_ofi_ofiutils_ep_release(ofi_ep, av, device->base.dev_id);
 		ofi_ep = nullptr;
-		av = nullptr;	
+		av = nullptr;		
 	}
 
 	assert(ret == 0);
